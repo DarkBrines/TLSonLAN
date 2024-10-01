@@ -2,7 +2,7 @@
 Ecrit par Raphaël Roumezin, version 0.1
 
 ## Introduction
-TLSonLAN est un modèle qui permet la sécurité d'équipement sur un même sous-réseau, malgré la non-fiabilité des connexions, et leur expositions à des attaques de type MITM (Man In The Middle). Il est typiquement destiné à des petites installations de réseau où les membres on besoin de communiquer de facon sécurisée, et sans avoir besoin d'échanger des fichiers de certificat entre les machines.
+TLSonLAN est un modèle qui permet la sécurité d'équipement sur un même sous-réseau, malgré la non-fiabilité des connexions, et leur expositions à des attaques de type MITM (Man In The Middle). Il est typiquement destiné à des petites installations de réseau où les membres on besoin de communiquer de facon sécurisée, et sans avoir besoin d'échanger manuellement des fichiers de certificat entre les machines.
 
 Cette méthode implique des vérifications par l'utilisateur en comparant deux chaînes de caractères, écrites sur l'appareil en train de rejoindre le réseau et l'appareil hébergant le serveur d'authorité (typiquement le routeur/NAT). Elle résulte en l'obtention par le client d'un certificat TLS, signé par l'authorité du réseau, et dont il possède la clé privée.
 
